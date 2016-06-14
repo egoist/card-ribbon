@@ -7,7 +7,7 @@
   padding: 3px 5px;
   font-size: 12px;
   color: white;
-  line-height: 1.4;
+  line-height: 1.4
 }
 
 .card-ribbon:after {
@@ -19,5 +19,14 @@
   border-left-color: #7d7d7d;
   right: 0;
   transform: rotateX(45deg);
-  transform-origin: top;
+  transform-origin: top
+}
+
+.card-ribbon-pink {
+  background-color: rgba(242, 93, 142, 0.84)
+}
+
+.card-ribbon-pink:after {
+  border-top-color: #f25d8e;
+  border-left-color: #f25d8e
 }
