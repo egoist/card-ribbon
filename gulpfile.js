@@ -23,7 +23,11 @@ gulp.task('css', () => {
 
 gulp.task('jade', () => {
   return gulp.src('./src/jade/index.jade')
-    .pipe(jade())
+    .pipe(jade({
+      locals: {
+        time: Date.now()
+      }
+    }))
     .pipe(gulp.dest('demo'))
 })
 
