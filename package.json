@@ -15,7 +15,8 @@
   "scripts": {
     "test": "echo lol",
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "gh": "gh-pages -d demo"
   },
   "main": "dist/card-ribbon.css",
   "files": [
