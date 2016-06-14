@@ -1,0 +1,36 @@
+{
+  "name": "card-ribbon",
+  "version": "0.0.0",
+  "description": "Card ribbon in pure CSS.",
+  "license": "MIT",
+  "repository": "egoist/card-ribbon",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "echo lol",
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "main": "dist/card-ribbon.css",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "css",
+    "ribbon",
+    "css3"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-serve": "^1.2.0",
+    "postcss-cssnext": "^2.6.0"
+  }
+}
