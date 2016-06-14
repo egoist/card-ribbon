@@ -9,6 +9,7 @@ html
     style.
       body {
         margin: 0;
+        text-align: center;
         background-color: #f0f0f0;
         font-family: -apple-system, BlinkMacSystemFont,
              'avenir next', avenir,
@@ -18,9 +19,10 @@ html
              sans-serif;
       }
       .card {
+        text-align: left;
         width: 200px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 20px;
         background-color: white;
         border-radius: 4px;
         border: 1px solid #e2e2e2;
@@ -61,9 +63,15 @@ html
         width: 138px;
         height: 78px;
       }
+      #select {
+        margin-top: 100px;
+      }
   body
     include github.html
     .main
+      select#select
+        option(value="gray") Gray
+        option(value="pink") Pink
       .card
         .card-ribbon 1023 people watching
         .card-cover
@@ -74,4 +82,15 @@ html
             .card-tag 战斗
             .card-tag 励志
         .card-arrow
+    script.
+      document.getElementById('select').addEventListener('change', handleChange, false)
+      var card = document.querySelector('.card-ribbon')
+      function handleChange(e) {
+        var val = e.target.value
+        if (val === 'pink') {
+          card.classList.add('card-ribbon-pink')
+        } else {
+          card.classList.remove('card-ribbon-pink')
+        }
+      }
 
