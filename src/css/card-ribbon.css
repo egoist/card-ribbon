@@ -2,7 +2,7 @@
   --gray: rgba(153, 153, 153, 0.84);
   --darkGray: #7d7d7d;
   --pink: rgba(242, 93, 142, 0.84);
-  --darkPink: #f25d8e;
+  --darkPink: #C62828;
 }
 
 .card-ribbon {
@@ -15,11 +15,12 @@
   font-size: 12px;
   color: white;
   line-height: 1.4;
+  box-sizing: border-box;
   &:after {
     content: '';
     position: absolute;
     border: 2px solid transparent;
-    top: 100%;
+    bottom: -4px;
     border-top-color: var(--darkGray);
     border-left-color: var(--darkGray);
     right: 0;
